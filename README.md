@@ -3,6 +3,7 @@ Base TypeScript Node.JS Server to get up and running real quick. `npm install` t
 
 ### NPM Commands
 Some preset NPM commands.
+
 Command | Action | Description
 --- | --- | ---
 `npm test` | **Test Routes** | Runs the test scripts located in the test folder.
