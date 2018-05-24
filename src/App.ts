@@ -23,7 +23,7 @@ export class App {
         this.express.use(BodyParser.json())
         this.express.use(BodyParser.urlencoded({ extended: false}))
         this.express.use(Compression())
-        this.express.use(Cors())
+        this.express.use(Cors({origin: true}))
     }
 
     private routes(): void {
