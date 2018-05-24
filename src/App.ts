@@ -2,6 +2,7 @@ import * as BodyParser from 'body-parser'
 import * as Express from 'express'
 import * as Logger from 'morgan'
 import * as Compression from 'compression'
+import * as Cors from 'cors'
 import { IndexRouter } from './routes/IndexRouter'
 
 export class App {
@@ -22,6 +23,7 @@ export class App {
         this.express.use(BodyParser.json())
         this.express.use(BodyParser.urlencoded({ extended: false}))
         this.express.use(Compression())
+        this.express.use(Cors())
     }
 
     private routes(): void {
